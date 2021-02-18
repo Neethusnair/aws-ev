@@ -8,7 +8,7 @@ provider "aws" {
 resource "aws_instance" "web" {
   ami           = "ami-00831fc7c1e3ddc60"
   instance_type = "t2.micro"
-  tag = {
+  tags = {
     Name = "nsubnet"
   }
 }
